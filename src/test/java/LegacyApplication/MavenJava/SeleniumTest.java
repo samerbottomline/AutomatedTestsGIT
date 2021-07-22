@@ -24,14 +24,14 @@ public class SeleniumTest {
 		driver.navigate().to(prop.getProperty("URL"));
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(By.name("username")));
-		System.out.println("First Maven Tests");
+		System.out.println("First Maven Test");
 		driver.quit();
 	}
 	
 	@Test(description = "Second Test", enabled = true)
 	public void TestTwo()
 	{
-		System.out.println("Second Maven Tests");
+		System.out.println("Second Maven Test");
 	}
 	
 	@Test(description = "Third Test", enabled = true)
@@ -45,7 +45,7 @@ public class SeleniumTest {
 		driver.navigate().to(prop.getProperty("URL"));
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(By.name("password")));
-		System.out.println("Third Maven Tests");
+		System.out.println("Third Maven Test");
 		driver.quit();
 	}
 
