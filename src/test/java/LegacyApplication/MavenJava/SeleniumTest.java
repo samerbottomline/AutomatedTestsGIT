@@ -23,7 +23,7 @@ public class SeleniumTest {
 		ChromeDriver driver = new ChromeDriver();
 		driver.navigate().to(prop.getProperty("URL"));
 		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(By.name("usernam")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.name("username")));
 		System.out.println("First Maven Test");
 		driver.quit();
 	}
