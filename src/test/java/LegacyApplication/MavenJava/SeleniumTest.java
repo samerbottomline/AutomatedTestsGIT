@@ -33,6 +33,20 @@ public class SeleniumTest {
 	{
 		System.out.println("Second Maven Test");
 	}
+	
+	public void TestThree() throws IOException
+	{
+		Properties prop = new Properties();
+		FileInputStream fis = new FileInputStream("C:\\Users\\samer.rahal\\eclipse-workspace\\TestProject\\param.properties");
+		prop.load(fis);
+		System.setProperty("webdriver.chrome.driver", prop.getProperty("ChromePath"));
+		ChromeDriver driver = new ChromeDriver();
+		driver.navigate().to(prop.getProperty("URL"));
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.elementToBeClickable(By.name("password")));
+		System.out.println("Third Maven Test");
+		driver.quit();
+	}
 
 
 }
