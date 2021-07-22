@@ -7,7 +7,6 @@
       <class name="LegacyApplication.MavenJava.SeleniumTest">
         <methods>
       		<!--<exclude name="TestOne"/> -->
-      		<!--<exclude name="TestTwo"/>-->
       	</methods>
       </class>
     </classes>
