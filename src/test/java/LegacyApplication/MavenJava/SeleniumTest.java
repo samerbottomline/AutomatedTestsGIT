@@ -34,6 +34,7 @@ public class SeleniumTest {
 		System.out.println("Second Maven Test");
 	}
 	
+	@Test(description = "Third Test", enabled = true)
 	public void TestThree() throws IOException
 	{
 		Properties prop = new Properties();
