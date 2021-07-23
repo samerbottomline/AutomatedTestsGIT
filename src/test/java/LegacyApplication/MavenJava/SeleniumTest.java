@@ -48,6 +48,12 @@ public class SeleniumTest {
 		System.out.println("Third Maven Test");
 		driver.quit();
 	}
+	
+	@Test(description = "Fourth Test", enabled = true)
+	public void TestFour()
+	{
+		System.out.println("Fourth Maven Test");
+	}
 
 
 }
