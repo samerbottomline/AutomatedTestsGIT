@@ -1,0 +1,5 @@
+There are a few best practices in using page objects, that we should make an effort to follow.
+
++++ A page object should not have any assertions (page objects are stricly under com.bottomline.pages package)
++++ A page object should represent meaningful elements of a page and not necessarily a complete page 
++++ When you navigate you should return the a page object for the next page
