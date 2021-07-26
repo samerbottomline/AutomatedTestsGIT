@@ -38,6 +38,12 @@
 	    <scope>test</scope>
 	</dependency>
 	
+	<!-- added by detollino, to allow the use of FileUtils to move files -->
+	<dependency>
+    	<groupId>commons-io</groupId>
+    	<artifactId>commons-io</artifactId>
+    	<version>2.11.0</version>
+	</dependency>
 	
   </dependencies>
 
